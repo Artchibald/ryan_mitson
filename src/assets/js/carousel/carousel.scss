@@ -3,6 +3,8 @@
   position: absolute;
   height: 100%;
   display: block;
+  visibility: visible;
+  z-index: 0;
 }
 
 .carousel > * {
@@ -16,61 +18,73 @@
 
 /* Slide animations */
 .carousel > *:nth-child(1) {
-  animation: fade1 9s infinite;
+  animation: fade1 3s infinite;
   background-image: url(./../../media/slide1.png);
   background-size: cover;
 }
 @keyframes fade1 {
   0% {
-    opacity: 1;
+    visibility: visible;
+    z-index: 0;
   }
   33% {
-    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
   66% {
-    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
   100% {
-    opacity: 1;
+    visibility: visible;
+    z-index: 0;
   }
 }
 
 .carousel > *:nth-child(2) {
-  animation: fade2 9s infinite;
+  animation: fade2 3s infinite;
   background-image: url(./../../media/slide2.png);
   background-size: cover;
 }
 @keyframes fade2 {
   0% {
-    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
   33% {
-    opacity: 1;
+    visibility: visible;
+    z-index: 0;
   }
   66% {
-    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
   100% {
-    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
 }
 
 .carousel > *:nth-child(3) {
-  animation: fade3 9s infinite;
+  animation: fade3 3s infinite;
   background-image: url(./../../media/slide3.png);
   background-size: cover;
 }
 @keyframes fade3 {
   0% {
-    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
   33% {
-    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
   66% {
-    opacity: 1;
+    visibility: visible;
+    z-index: 0;
   }
   100% {
-    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
   }
 }
