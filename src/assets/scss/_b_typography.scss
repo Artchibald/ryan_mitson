@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'arial_novabold';
+  src: url('./../fonts/arialnova-bold-webfont.woff2') format('woff2'),
+    url('./../fonts/arialnova-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'arial_novaregular';
+  src: url('./../fonts/arialnova-webfont.woff2') format('woff2'),
+    url('./../fonts/arialnova-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'arial_novaregular';
+
+  .MuiButton-root {
+    font-family: 'arial_novabold';
+    text-transform: none;
+  }
+  //form
+  .container {
+    input,
+    textarea,
+    .btn {
+      font-family: 'arial_novaregular';
+    }
+  }
+}

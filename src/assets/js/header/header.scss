@@ -1,0 +1,95 @@
+@import './../../scss/a_variables';
+header {
+  .flex_container {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+
+    .flex_child {
+      position: relative;
+      width: 200px;
+      height: 120px;
+      margin: auto;
+      @media screen and (min-width: $small) {
+        width: auto;
+        height: auto;
+        margin: 0;
+      }
+      .btn_1 {
+        position: absolute;
+        top: 70px;
+        right: 0px;
+        width: 200px;
+        margin: 0;
+        @media screen and (min-width: $small) {
+          width: auto;
+          top: 40px;
+          right: 310px;
+          margin: 0 5px;
+        }
+      }
+      .btn_2 {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 200px;
+        margin: 0;
+        @media screen and (min-width: $small) {
+          width: auto;
+          top: 40px;
+          right: 158px;
+          margin: 0 5px;
+        }
+      }
+    }
+  }
+  svg.logo {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    height: 27px;
+    @media screen and (min-width: $small) {
+      top: 50px;
+      left: 50px;
+    }
+  }
+  svg.insta {
+    height: 27px;
+    position: absolute;
+    top: 25px;
+    right: 75px;
+    fill: none;
+    stroke: #010101;
+    stroke-miterlimit: 10;
+    @media screen and (min-width: $small) {
+      top: 50px;
+      right: 100px;
+    }
+    &:hover rect,
+    &:hover circle {
+      stroke: #fff;
+      fill: #000;
+    }
+  }
+
+  svg.vimeo {
+    height: 27px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    @media screen and (min-width: $small) {
+      top: 50px;
+      right: 50px;
+    }
+    fill: #010101;
+    &:hover path {
+      fill: #fff;
+    }
+  }
+
+  // .container {
+  //   z-index: 999;
+  //   display: block;
+  //   position: absolute;
+  // }
+}

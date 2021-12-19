@@ -1,0 +1,73 @@
+@import './../../scss/a_variables';
+
+//overide mui white bg
+body .css-m9glnp-MuiPaper-root-MuiDialog-paper {
+  background-color: transparent;
+}
+.flex_container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.6);
+
+  .flex_child {
+    position: relative;
+    width: 300px;
+    height: 440px;
+    margin: auto;
+    .MuiButtonBase-root {
+      position: absolute;
+      right: -8px;
+      top: -40px;
+      .MuiSvgIcon-root {
+        fill: white;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+    .container {
+      width: 280px;
+      input {
+        width: 100%;
+        border-radius: 5px;
+        background-color: $grey;
+        border: 2px solid white;
+        padding: 6px;
+        margin: 10px 0;
+        color: white;
+        &::placeholder {
+          color: white;
+        }
+      }
+      textarea {
+        width: 100%;
+        background-color: $grey;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 6px;
+        margin: 10px 0;
+        color: white;
+        &::placeholder {
+          color: white;
+        }
+      }
+      .btn {
+        background-color: $grey;
+        border: 2px solid white;
+        border-radius: 5px;
+        width: 120px;
+        display: block;
+        margin: 0 auto;
+        color: white;
+        padding: 10px;
+
+        &:hover {
+          background-color: white;
+          color: $grey;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
