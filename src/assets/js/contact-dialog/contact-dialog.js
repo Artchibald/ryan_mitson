@@ -4,10 +4,10 @@ import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
-import Slide from '@mui/material/Slide';
+import Fade from '@mui/material/Fade';
 
 const Transition = React.forwardRef(function Transition(props, ref) {
-  return <Slide direction="up" ref={ref} {...props} />;
+  return <Fade direction="up" ref={ref} {...props} />;
 });
 
 export default function FullScreenDialog() {
@@ -22,7 +22,7 @@ export default function FullScreenDialog() {
   };
 
   return (
-    <div>
+    <React.Fragment>
       <Button className="btn_2" onClick={handleClickOpen}>
         Hit me up!
       </Button>
@@ -93,6 +93,6 @@ export default function FullScreenDialog() {
           </div>
         </div>
       </Dialog>
-    </div>
+    </React.Fragment>
   );
 }

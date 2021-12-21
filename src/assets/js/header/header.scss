@@ -22,9 +22,9 @@ header {
         width: 200px;
         margin: 0;
         @media screen and (min-width: $small) {
-          width: auto;
-          top: 40px;
-          right: 310px;
+          width: 140px;
+          top: 44px;
+          right: 334px;
           margin: 0 5px;
         }
       }
@@ -35,10 +35,10 @@ header {
         width: 200px;
         margin: 0;
         @media screen and (min-width: $small) {
-          width: auto;
-          top: 40px;
-          right: 158px;
           margin: 0 5px;
+          right: 162px;
+          top: 44px;
+          width: 140px;
         }
       }
     }
@@ -68,7 +68,7 @@ header {
     &:hover rect,
     &:hover circle {
       stroke: #fff;
-      fill: #000;
+      fill: transparent;
     }
   }
 
@@ -79,7 +79,7 @@ header {
     right: 25px;
     @media screen and (min-width: $small) {
       top: 50px;
-      right: 50px;
+      right: 46px;
     }
     fill: #010101;
     &:hover path {
