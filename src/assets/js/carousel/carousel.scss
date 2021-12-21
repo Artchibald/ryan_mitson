@@ -5,6 +5,15 @@
   display: block;
   visibility: visible;
   z-index: 0;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // This is the property that emulates background-size: cover
+  }
 }
 
 .carousel > * {
@@ -13,14 +22,11 @@
   right: 0;
   top: 0;
   bottom: 0;
-  background-size: cover;
 }
 
 /* Slide animations */
 .carousel > *:nth-child(1) {
   animation: fade1 3s infinite;
-  background-image: url(./../../media/slide1.png);
-  background-size: cover;
 }
 @keyframes fade1 {
   0% {
@@ -43,8 +49,6 @@
 
 .carousel > *:nth-child(2) {
   animation: fade2 3s infinite;
-  background-image: url(./../../media/slide2.png);
-  background-size: cover;
 }
 @keyframes fade2 {
   0% {
@@ -67,8 +71,6 @@
 
 .carousel > *:nth-child(3) {
   animation: fade3 3s infinite;
-  background-image: url(./../../media/slide3.png);
-  background-size: cover;
 }
 @keyframes fade3 {
   0% {

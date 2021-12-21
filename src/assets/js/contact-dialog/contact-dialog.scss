@@ -1,7 +1,7 @@
 @import './../../scss/a_variables';
 
 //overide mui white bg
-body .css-m9glnp-MuiPaper-root-MuiDialog-paper {
+body .MuiPaper-root.MuiPaper-elevation {
   background-color: transparent;
 }
 .flex_container {
