@@ -50,7 +50,7 @@ header {
     height: 27px;
 
     &:hover {
-      fill: white;
+      filter: invert(100%);
     }
 
     @media screen and (min-width: $small) {

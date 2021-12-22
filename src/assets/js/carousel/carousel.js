@@ -24,7 +24,7 @@ const Carousel = () => {
         >
           <Grid item xs={3}>
             <svg
-              width="100px"
+              height="27px"
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 38.17 30"

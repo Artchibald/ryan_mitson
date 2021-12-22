@@ -5,6 +5,9 @@ body.modal_open {
   header a svg.logo {
     z-index: 9999;
     fill: white;
+    &:hover {
+      filter: invert(30%);
+    }
   }
   header .flex_container .flex_child .btn_1 {
     @media screen and (min-width: $small) {
