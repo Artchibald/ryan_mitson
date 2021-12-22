@@ -3,10 +3,8 @@
 // keep header nav on desk above modal
 body.modal_open {
   header a svg.logo {
-    @media screen and (min-width: $small) {
-      z-index: 9999;
-      fill: white;
-    }
+    z-index: 9999;
+    fill: white;
   }
   header .flex_container .flex_child .btn_1 {
     @media screen and (min-width: $small) {
@@ -35,23 +33,19 @@ body.modal_open {
     }
   }
   header svg.insta {
-    @media screen and (min-width: $small) {
-      z-index: 9999;
-      fill: transparent;
-      stroke: white;
-      &:hover rect,
-      &:hover circle {
-        stroke: black;
-      }
+    z-index: 9999;
+    fill: transparent;
+    stroke: white;
+    &:hover rect,
+    &:hover circle {
+      stroke: black;
     }
   }
   header svg.vimeo {
-    @media screen and (min-width: $small) {
-      z-index: 9999;
-      fill: #fff;
-      &:hover path {
-        fill: #010101;
-      }
+    z-index: 9999;
+    fill: #fff;
+    &:hover path {
+      fill: #010101;
     }
   }
 }

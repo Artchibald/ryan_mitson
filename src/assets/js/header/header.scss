@@ -48,6 +48,11 @@ header {
     top: 25px;
     left: 25px;
     height: 27px;
+
+    &:hover {
+      fill: white;
+    }
+
     @media screen and (min-width: $small) {
       top: 50px;
       left: 50px;
