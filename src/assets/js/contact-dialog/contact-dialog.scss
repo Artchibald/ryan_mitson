@@ -1,5 +1,60 @@
 @import './../../scss/a_variables';
 
+// keep header nav on desk above modal
+body.modal_open {
+  header a svg.logo {
+    @media screen and (min-width: $small) {
+      z-index: 9999;
+      fill: white;
+    }
+  }
+  header .flex_container .flex_child .btn_1 {
+    @media screen and (min-width: $small) {
+      z-index: 9999;
+      border: 2px solid white;
+      color: white;
+      background-color: transparent;
+      &:hover {
+        border: 2px solid white;
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+  header .flex_container .flex_child .btn_2 {
+    @media screen and (min-width: $small) {
+      z-index: 9999;
+      border: 2px solid white;
+      color: black;
+      background-color: white;
+      &:hover {
+        border: 2px solid white;
+        color: white;
+        background-color: transparent;
+      }
+    }
+  }
+  header svg.insta {
+    @media screen and (min-width: $small) {
+      z-index: 9999;
+      fill: transparent;
+      stroke: white;
+      &:hover rect,
+      &:hover circle {
+        stroke: black;
+      }
+    }
+  }
+  header svg.vimeo {
+    @media screen and (min-width: $small) {
+      z-index: 9999;
+      fill: #fff;
+      &:hover path {
+        fill: #010101;
+      }
+    }
+  }
+}
 //overide mui white bg
 body .MuiPaper-root.MuiPaper-elevation {
   background-color: transparent;
@@ -32,7 +87,7 @@ body .MuiPaper-root.MuiPaper-elevation {
         width: 100%;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0);
-        border: 2px solid white;
+        border: 1px solid white;
         padding: 6px;
         margin: 10px 0;
         color: white;
@@ -43,7 +98,7 @@ body .MuiPaper-root.MuiPaper-elevation {
       textarea {
         width: 100%;
         background-color: rgba(0, 0, 0, 0);
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 5px;
         padding: 6px;
         margin: 10px 0;
@@ -54,7 +109,7 @@ body .MuiPaper-root.MuiPaper-elevation {
       }
       .btn {
         background-color: rgba(0, 0, 0, 0);
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 5px;
         width: 120px;
         display: block;

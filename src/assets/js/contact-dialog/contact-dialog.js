@@ -15,10 +15,12 @@ export default function FullScreenDialog() {
 
   const handleClickOpen = () => {
     setOpen(true);
+    document.body.classList.add('modal_open');
   };
 
   const handleClose = () => {
     setOpen(false);
+    document.body.classList.remove('modal_open');
   };
 
   return (
