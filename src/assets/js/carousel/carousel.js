@@ -7,6 +7,13 @@ import { Grid } from '@material-ui/core';
 const Slide1 = lazy(() => import('./slide1.js'));
 const Slide2 = lazy(() => import('./slide2.js'));
 const Slide3 = lazy(() => import('./slide3.js'));
+const Slide4 = lazy(() => import('./slide4.js'));
+const Slide5 = lazy(() => import('./slide5.js'));
+const Slide6 = lazy(() => import('./slide6.js'));
+const Slide7 = lazy(() => import('./slide7.js'));
+const Slide8 = lazy(() => import('./slide8.js'));
+const Slide9 = lazy(() => import('./slide9.js'));
+const Slide10 = lazy(() => import('./slide10.js'));
 
 const Carousel = () => {
   return (
@@ -40,6 +47,13 @@ const Carousel = () => {
         <Slide1 />
         <Slide2 />
         <Slide3 />
+        <Slide4 />
+        <Slide5 />
+        <Slide6 />
+        <Slide7 />
+        <Slide8 />
+        <Slide9 />
+        <Slide10 />
       </div>
     </Suspense>
   );

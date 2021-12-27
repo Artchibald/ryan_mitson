@@ -64,13 +64,20 @@ body .MuiPaper-root.MuiPaper-elevation {
 
   .flex_child {
     position: relative;
-    width: 300px;
+    width: 280px;
     height: 334px;
     margin: auto;
+    @media screen and (min-width: $small) {
+      width: 375px;
+      height: 375px;
+    }
     .MuiButtonBase-root {
       position: absolute;
       right: -8px;
       top: -40px;
+      @media screen and (min-width: $small) {
+        right: -12px;
+      }
       .MuiSvgIcon-root {
         fill: white;
         &:hover {
@@ -79,27 +86,33 @@ body .MuiPaper-root.MuiPaper-elevation {
       }
     }
     .container {
-      width: 280px;
+      width: 100%;
       input {
-        width: 100%;
+        width: -webkit-fill-available;
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0);
         border: 1px solid white;
         padding: 6px;
         margin: 10px 0;
         color: white;
+        @media screen and (min-width: $small) {
+          padding: 12px;
+        }
         &::placeholder {
           color: white;
         }
       }
       textarea {
-        width: 100%;
+        width: -webkit-fill-available;
         background-color: rgba(0, 0, 0, 0);
         border: 1px solid white;
         border-radius: 5px;
         padding: 6px;
         margin: 10px 0;
         color: white;
+        @media screen and (min-width: $small) {
+          padding: 12px;
+        }
         &::placeholder {
           color: white;
         }
