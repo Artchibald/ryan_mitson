@@ -8,6 +8,7 @@ class ProgressiveImage extends Component {
 
   constructor(props) {
     super(props);
+    document.body.classList.add('placeholder');
     // initially set loading to true and current src of image to placeholder image
     this.state = {
       loading: true,
@@ -20,6 +21,7 @@ class ProgressiveImage extends Component {
     // start loading original image
     const imageToLoad = new Image();
     imageToLoad.src = src;
+    document.body.classList.remove('placeholder');
     imageToLoad.onload = () =>
       // When image is loaded replace the image's src and set loading to false
       this.setState({ currentSrc: src, loading: false });
