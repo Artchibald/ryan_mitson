@@ -193,7 +193,8 @@
   }
 }
 
-.carousel > *:nth-child(7) .carousel > *:nth-child(8) {
+.carousel > *:nth-child(7),
+.carousel > *:nth-child(8) {
   animation: switch4 10s infinite;
 }
 @keyframes switch4 {
