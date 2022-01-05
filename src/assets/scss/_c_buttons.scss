@@ -4,6 +4,16 @@ button.MuiButton-root {
   margin: 0 5px;
   letter-spacing: -1px;
   &.btn_1 {
+    border: 2px solid white;
+    color: black;
+    background-color: white;
+    &:hover {
+      border: 2px solid black;
+      color: white;
+      background-color: black;
+    }
+  }
+  &.btn_2 {
     border: 2px solid black;
     color: white;
     background-color: black;
@@ -11,16 +21,6 @@ button.MuiButton-root {
       border: 2px solid white;
       color: black;
       background-color: white;
-    }
-  }
-  &.btn_2 {
-    border: 2px solid black;
-    color: black;
-    background-color: transparent;
-    &:hover {
-      border: 2px solid white;
-      color: white;
-      background-color: transparent;
     }
   }
 }

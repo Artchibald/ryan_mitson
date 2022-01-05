@@ -13,12 +13,12 @@ body.modal_open {
     @media screen and (min-width: $small) {
       z-index: 9999;
       border: 2px solid white;
-      color: white;
-      background-color: transparent;
+      color: black;
+      background-color: white;
       &:hover {
-        border: 2px solid white;
-        color: black;
-        background-color: white;
+        border: 2px solid black;
+        color: white;
+        background-color: black;
       }
     }
   }
@@ -29,9 +29,9 @@ body.modal_open {
       color: black;
       background-color: white;
       &:hover {
-        border: 2px solid white;
+        border: 2px solid black;
         color: white;
-        background-color: transparent;
+        background-color: black;
       }
     }
   }
@@ -129,6 +129,7 @@ body .MuiPaper-root.MuiPaper-elevation {
         padding: 10px;
         font-weight: 500;
         font-family: 'arial_novabold';
+        letter-spacing: -1px;
         &:hover {
           background-color: black;
           color: white;
