@@ -3,6 +3,10 @@ button.MuiButton-root {
   padding: 6px 18px;
   margin: 0 5px;
   letter-spacing: -1px;
+  font-size: 1rem;
+  @media screen and (min-width: $small) {
+    font-size: 0.875rem;
+  }
   &.btn_1 {
     border: 2px solid white;
     color: black;
