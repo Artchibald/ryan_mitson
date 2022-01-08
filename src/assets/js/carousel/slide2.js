@@ -1,23 +1,24 @@
 import React from 'react';
 import ProgressiveImage from './progressiveImageTemplate';
-import SlideImg2 from './../../media/slide2.jpg';
-import SlideImg2Mob from './../../media/slide2_mob.jpg';
 import Placeholder from './../../media/slide2Placeholder.jpg';
+class Slide2 extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        {/*update image on refresh so artist can replace*/}
+        <ProgressiveImage
+          className="desk"
+          src={`https://archibaldbutler.com/projects/ryan-mitson-drag-img/slide2.jpg?${new Date().getTime()}`}
+          placeholder={Placeholder}
+        />
+        <ProgressiveImage
+          className="mob"
+          src={`https://archibaldbutler.com/projects/ryan-mitson-drag-img/slide2_mob.jpg?${new Date().getTime()}`}
+          placeholder={Placeholder}
+        />
+      </React.Fragment>
+    );
+  }
+}
 
-const Slide2 = () => {
-  return (
-    <React.Fragment>
-      <ProgressiveImage
-        className="desk"
-        src={SlideImg2}
-        placeholder={Placeholder}
-      />
-      <ProgressiveImage
-        className="mob"
-        src={SlideImg2Mob}
-        placeholder={Placeholder}
-      />
-    </React.Fragment>
-  );
-};
 export default Slide2;
