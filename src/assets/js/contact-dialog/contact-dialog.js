@@ -30,7 +30,7 @@ export default function FullScreenDialog() {
       </Button>
 
       <Dialog
-        fullScreen 
+        fullScreen
         open={open}
         onClose={handleClose}
         TransitionComponent={Transition}
@@ -49,11 +49,15 @@ export default function FullScreenDialog() {
               <div className="container">
                 <form
                   target="_blank"
-                  action="https://formsubmit.co/archie@archibaldbutler.com"
+                  action="https://formsubmit.co/ryanmitsondesign@gmail.com"
                   method="POST"
                 >
                   {/*next page*/}
-                  <input type="hidden" name="_next" value="/" />
+                  <input
+                    type="hidden"
+                    name="_next"
+                    value="http://ryanmitson.com/"
+                  />
                   {/*remove captcha*/}
                   <input type="hidden" name="_captcha" value="false" />
                   <div className="form-group">

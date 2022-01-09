@@ -4,8 +4,7 @@ import './header.scss';
 import Button from '@material-ui/core/Button';
 import ContactDialog from './../contact-dialog/contact-dialog';
 function openPortfolio() {
-  const url =
-    'https://archibaldbutler.com/projects/ryan-mitson-portfolio-v1/RyanMitsonDesignPortfolio.pdf';
+  const url = 'http://www.ryanmitson.com/RyanMitsonDesignPortfolio.pdf';
   window.open(url, '_blank');
 }
 
